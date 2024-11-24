@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulários </title>
+</head>
+<body>
+    <h1> Formulários </h1>
+
+    <form> <!-- Cria um formulário -->
+
+        <label> Seu nome </label> <!-- um texto no lado do campo "escrevível"-->
+        <input type="text" placeholder="Digite seu nome"/> <br /> <!-- cria um campo no formulário "escrevível" -->
+
+        <label for="email"> Seu email </label>
+        <input id ="email" type="email" placeholder="Digite o seu e-mail"> <br /> <!-- Cria um ID único no documento, maniplável em JavaScript-->
+
+        <label> Número de celular </label>
+        <input type="tel" placeholder="Seu celular"/> <br />
+
+        <label> Numerozinhos legais </label>
+        <input type="number" max="100" min="-100" step="2" placeholder="Numeruzinho ui ui ui"/> <br /> <!-- Setas para adicionar ou subtrair números-->
+
+        <label> Selecione um arquivo </label>
+        <input type="file"/> <br /> <!-- Faz selecionar um arquivo do computador-->
+
+        <h3> Escolha corzinha </h3>
+        <input type="color"/> <br /> <br /> <!-- Cria uma roda de cores-->
+
+        <input type="checkbox" id="checkbox-termos"/> <label for="checkbox-termos"> Aceito os termos </label> <br /> <!-- Cria um checkbox, texto clicável para marcar a caixa-->
+
+        <p>
+            Qual sua cor favorita?
+        </p>
+        <input type="radio" name="cor-favorita" id="Branco"/> <label for="Branco"> Branco </label> <br />
+        <input type="radio" name="cor-favorita" id="Preto"/> <label for="Preto"> Negro </label> <br />
+        <input type="radio" name="cor-favorita" id="Amarelo"/> <label for="Amarelo"> Amarelo </label> <br />
+        <input type="radio" name="cor-favorita" id="Azul"/> <label for="Azul"> Azul </label> <br />
+
+        <label> Qual seu filme favorito? </label>
+        <select > <!-- cria uma listinha selecionável, <select multiple> para selecionar mais de um-->
+            <option> Duro de matar </option>
+            <option> Tranças da vovó careca </option>
+            <option> Um tira da pesada </option>
+            <option> Tropa de elite </option>
+        </select> <br /> <br /> <br /> <br />
+
+        <label> Envie-nos seu feedback!</label>
+        <textarea placeholder="Digite aqui seu feedback"></textarea>
+        <button type="submit">
+            Enviar formulário
+        </button>
+        <button type="reset"">
+            Limpar formulário
+        </button>
+    </form>
+</body>
+</html>
